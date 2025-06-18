@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Deportivo Azul</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="panel left-panel">
+        <div class="overlay-text">
+          <h1>SportBoard</h1>
+          <p>Compite, mejora y gana.</p>
+        </div>
+        <img src="img/imagen.jpg" alt="Deportes" />
+      </section>
+
+      <section class="panel right-panel">
+        <form id="authForm" class="form active" novalidate>
+          <h2>Iniciar Sesión</h2>
+
+          <label for="user">Usuario</label>
+          <input id="user" type="text" placeholder="Ingresa usuario" required />
+
+          <label for="pass">Contraseña</label>
+          <input
+            id="pass"
+            type="password"
+            placeholder="Ingresa contraseña"
+            required
+          />
+
+          <div class="form-row checkbox-row">
+            <label><input type="checkbox" /> Recordarme</label>
+            <button type="button" class="toggle-pass" data-target="pass">
+              Mostrar
+            </button>
+          </div>
+
+          <button type="submit">Entrar</button>
+
+          <div class="links">
+            <a href="#" id="showRegister">Crear cuenta</a>
+            <a href="#" id="showForgot">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <div class="social-login">
+            <span>O inicia sesión con</span>
+            <div class="logos">
+              <a href="#" class="social-btn" aria-label="Gmail">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                  alt="Gmail"
+                />
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="GitHub"
+                />
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <!-- Registro -->
+        <form id="registerForm" class="form">
+          <h2>Crear Cuenta</h2>
+
+          <label for="newUser">Usuario</label>
+          <input
+            id="newUser"
+            type="text"
+            placeholder="Nuevo usuario"
+            required
+          />
+
+          <label for="newEmail">Email</label>
+          <input
+            id="newEmail"
+            type="email"
+            placeholder="Correo electrónico"
+            required
+          />
+
+          <label for="newPass">Contraseña</label>
+          <input
+            id="newPass"
+            type="password"
+            placeholder="Nueva contraseña"
+            required
+          />
+
+          <div class="form-row">
+            <button type="button" class="toggle-pass" data-target="newPass">
+              Mostrar
+            </button>
+          </div>
+
+          <button type="submit">Registrarse</button>
+
+          <div class="links">
+            <a href="#" id="showLoginFromRegister">¿Ya tienes cuenta? Inicia sesión</a>
+          </div>
+
+          <div class="social-login">
+            <span>O regístrate con</span>
+            <div class="logos">
+              <a href="#" class="social-btn" aria-label="Gmail">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+                  alt="Gmail"
+                />
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="GitHub"
+                />
+              </a>
+            </div>
+          </div>
+        </form>
+
+        <form id="forgotForm" class="form">
+          <h2>Recuperar Contraseña</h2>
+
+          <label for="emailForgot">Correo electrónico</label>
+          <input
+            id="emailForgot"
+            type="email"
+            placeholder="Ingresa tu email"
+            required
+          />
+
+          <button type="submit">Enviar enlace</button>
+
+          <div class="links">
+            <a href="#" id="showLoginFromForgot">¿Ya tienes cuenta? Inicia sesión</a>
+            <a href="#" id="showRegisterFromForgot">Crear cuenta</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
